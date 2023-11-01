@@ -6,7 +6,7 @@ on:
        main 
     
 env:
-  ROM_LINK: your rom's direct link
+  
   ROM_LINK: https://downloads.sourceforge.net/project/kevios12a40roms/RELEASE/descendant_a40-11.5-20210920-Community.zip?ts=gAAAAABlQtUffybS47a_cdRaQX16QmizPwEhjY_DyTHn8nAx0oNz4Q_NMUsD8pj5fOPX2X25L_d-R57K_wYti_bk9B4DpQMsyw%3D%3D&use_mirror=master&r=https%3A%2F%2Fsourceforge.net%2Fprojects%2Fkevios12a40roms%2Ffiles%2FRELEASE%2F
   ROM_TYPE: Generic
   BUILD_AB: true
