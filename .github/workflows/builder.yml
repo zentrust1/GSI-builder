@@ -1,8 +1,9 @@
 name: Generic System Image Builder
 
 on:
-  watch:
-    types: [started]
+  push:
+    branches:
+       main 
     
 env:
   ROM_LINK: your rom's direct link
