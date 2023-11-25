@@ -45,15 +45,15 @@ jobs:
               sudo bash setup.sh
        
        - name: Downloading rom and building A Only GSI
-         if: env.BUILD_AONLY == 'true'
+         if: env.BUILD_AONLY == 'false'
          run: sudo ./ErfanGSIs/url2GSI.sh -a $ROM_LINK $ROM_TYPE -d
        
        - name: 7zipping Aonly GSI
-         if: env.BUILD_AONLY == 'true'
+         if: env.BUILD_AONLY == 'false'
          run: 7za a -t7z -r $ROM_AONLY ErfanGSIs/output/*
        
        - name: Uploading Aonly GSI
-         if: env.BUILD_AONLY == 'true'
+         if: env.BUILD_AONLY == 'false'
          run: |
               curl -sL https://git.io/file-transfer | sh
               ./transfer gof $ROM_AONLY
